@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estatística - Dicionário de Matemática</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #0078D7;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #005A9E;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h2 {
+            color: #0078D7;
+            margin-bottom: 20px;
+        }
+        p {
+            line-height: 1.6;
+            color: #333;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #0078D7;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Estatística</h1>
+        <p>Aprenda os conceitos e métodos usados para analisar dados e tirar conclusões!</p>
+    </header>
+    <nav>
+        <a href="home.html">Início</a>
+        <a href="perfil.html">Perfil</a>
+        <a href="graficos.html">Gráficos</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="historia.html">História da Matemática</a>
+        <a href="sinais.html">Sinais</a>
+    </nav>
+    <main>
+        <h2>O que é Estatística?</h2>
+        <p>
+            A Estatística é a área da matemática que se ocupa da coleta, organização, análise, interpretação e apresentação de dados. 
+            Seu objetivo é tirar conclusões a partir de dados coletados e usá-los para fazer previsões ou tomar decisões.
+        </p>
+        <h3>Principais Conceitos de Estatística</h3>
+        <ul>
+            <li><strong>População:</strong> O conjunto completo de elementos que têm uma característica comum que se quer estudar.</li>
+            <li><strong>Amostra:</strong> Uma parte representativa da população, escolhida para análise, quando não é possível analisar toda a população.</li>
+            <li><strong>Variáveis:</strong> Características ou propriedades que podem ser medidas e variam entre os membros de uma população ou amostra.</li>
+            <li><strong>Frequência:</strong> O número de vezes que um determinado valor ou categoria aparece em um conjunto de dados.</li>
+        </ul>
+        <h3>Distribuição de Frequências</h3>
+        <p>
+            Uma distribuição de frequências é uma tabela que organiza os dados para mostrar quantas vezes cada valor ocorre. Pode ser representada de forma simples, por exemplo:
+        </p>
+        <table border="1" cellpadding="5" cellspacing="0" style="margin: 20px 0; width: 100%; text-align: center;">
+            <tr>
+                <th>Valor</th>
+                <th>Frequência</th>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>7</td>
+            </tr>
+        </table>
+        <h3>Medidas de Tendência Central</h3>
+        <p>
+            As medidas de tendência central ajudam a resumir um conjunto de dados, fornecendo um valor representativo. As principais medidas são:
+        </p>
+        <ul>
+            <li><strong>Moda:</strong> O valor que mais aparece em um conjunto de dados.</li>
+            <li><strong>Mediana:</strong> O valor que divide o conjunto de dados ao meio, ou seja, 50% dos valores são menores e 50% são maiores.</li>
+            <li><strong>Média:</strong> A soma de todos os valores dividida pelo número de elementos no conjunto. Exemplo: Para os dados {2, 4, 6, 8}, a média é (2 + 4 + 6 + 8) / 4 = 5.</li>
+        </ul>
+        <h3>Desvio Padrão</h3>
+        <p>
+            O desvio padrão é uma medida da dispersão dos dados. Quanto maior o desvio padrão, mais espalhados estão os dados em relação à média. 
+            Ele é usado para entender a variabilidade dos dados.
+        </p>
+        <h3>Gráficos Estatísticos</h3>
+        <p>
+            Os gráficos são ferramentas essenciais para a visualização de dados estatísticos. Alguns dos gráficos mais comuns incluem:
+        </p>
+        <ul>
+            <li><strong>Gráfico de Barras:</strong> Usado para comparar a frequência de diferentes categorias.</li>
+            <li><strong>Gráfico de Pizza:</strong> Usado para mostrar a proporção de cada categoria em relação ao total.</li>
+            <li><strong>Histograma:</strong> Usado para mostrar a distribuição de dados contínuos em intervalos.</li>
+        </ul>
+        <h3>Exemplo de Aplicação</h3>
+        <p>
+            Suponha que você tenha coletado os seguintes dados sobre as idades de um grupo de 10 pessoas: 
+            <br><strong>{20, 22, 25, 30, 22, 24, 28, 30, 22, 26}</strong>.
+            <br><br>
+            A média seria: (20 + 22 + 25 + 30 + 22 + 24 + 28 + 30 + 22 + 26) / 10 = 25.9.
+            O desvio padrão pode ser calculado para entender melhor a dispersão dos dados.
+        </p>
+    </main>
+    <footer>
+        <p>&copy; 2024 Dicionário de Matemática. Criado para facilitar o aprendizado de conceitos matemáticos.</p>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicionário de Matemática</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #0078D7;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #005A9E;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .intro {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #searchBar {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        #searchInput {
+            width: 80%;
+            padding: 10px;
+            border: 2px solid #0078D7;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+        .term {
+            background: white;
+            margin-bottom: 15px;
+            padding: 15px;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .term h3 {
+            color: #0078D7;
+            margin-bottom: 5px;
+        }
+        .term p {
+            margin: 0;
+            color: #333;
+        }
+        .explore-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #0078D7;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .explore-button:hover {
+            background-color: #005A9E;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #0078D7;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dicionário de Matemática</h1>
+        <p>Explore os principais conceitos da matemática!</p>
+    </header>
+    <nav>
+        <a href="home.html">Início</a>
+        <a href="perfil.html">Perfil</a>
+        <a href="graficos.html">Gráficos</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="historia.html">História da Matemática</a>
+        <a href="sinais.html">Sinais</a>
+    </nav>
+    <main>
+        <div class="intro">
+            <h2>Bem-vindo ao Dicionário de Matemática</h2>
+            <p>Nosso objetivo é ajudar você a aprender os conceitos essenciais de matemática, de forma simples e prática.</p>
+        </div>
+        <div id="searchBar">
+            <input 
+                type="text" 
+                id="searchInput" 
+                placeholder="Digite o termo que deseja buscar..." 
+                onkeyup="searchTerm()">
+        </div>
+
+        <section class="term">
+            <h3><a href="algebra.html">Álgebra</a></h3>
+            <p>Ramo da matemática que utiliza letras e símbolos para representar números e resolver equações.</p>
+            <a href="algebra.html" class="explore-button">Explorar</a>
+        </section>
+        <section class="term">
+            <h3><a href="conjunto.html">Conjunto</a></h3>
+            <p>Uma coleção de elementos, como números ou objetos, definidos por uma regra clara.</p>
+            <a href="conjunto.html" class="explore-button">Explorar</a>
+        </section>
+        <section class="term">
+            <h3><a href="determinante.html">Determinante</a></h3>
+            <p>Um número associado a uma matriz que pode indicar se ela é invertível.</p>
+            <a href="determinante.html" class="explore-button">Explorar</a>
+        </section>
+        <section class="term">
+            <h3><a href="estatistica.html">Estatística</a></h3>
+            <p>Ramo da matemática que coleta, organiza e analisa dados.</p>
+            <a href="estatistica.html" class="explore-button">Explorar</a>
+        </section>
+        <section class="term">
+            <h3><a href="fatorial.html">Fatorial</a></h3>
+            <p>O produto de todos os números inteiros positivos até um dado número.</p>
+            <a href="fatorial.html" class="explore-button">Explorar</a>
+        </section>
+        <!-- Mais termos aqui, cada um com link e botão de explorar -->
+
+    </main>
+    <footer id="sobre">
+        <p>&copy; 2024 Dicionário de Matemática. Criado para facilitar o aprendizado de conceitos matemáticos.</p>
+    </footer>
+
+    <script>
+        function searchTerm() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const terms = document.querySelectorAll('.term');
+            terms.forEach(term => {
+                const title = term.querySelector('h3').innerText.toLowerCase();
+                if (title.includes(input)) {
+                    term.style.display = 'block';
+                } else {
+                    term.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
+

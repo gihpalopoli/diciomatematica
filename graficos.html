@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficos</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            padding: 20px;
+            text-align: center;
+        }
+        canvas {
+            max-width: 600px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gráficos Matemáticos</h1>
+    <canvas id="myChart"></canvas>
+    <script>
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Álgebra', 'Geometria', 'Funções', 'Estatística', 'Cálculo'],
+                datasets: [{
+                    label: 'Popularidade dos Tópicos',
+                    data: [12, 19, 7, 5, 15],
+                    backgroundColor: ['#0078D7', '#005A9E', '#00427A', '#003366', '#00234F']
+                }]
+            }
+        });
+    </script>
+</body>
+</html>
